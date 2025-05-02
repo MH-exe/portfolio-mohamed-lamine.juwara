@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Veille Technologique</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    .skill-description {
+      display: none;
+    }
+    .skill-card:hover .skill-description {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-roboto flex">
+  <!-- Sidebar -->
+  <aside class="bg-gray-800 w-64 min-h-screen p-4">
+    <h1 class="text-2xl font-bold mb-8">Menu</h1>
+    <nav>
+      <ul>
+        <li class="mb-4">
+          <a href="../index.html" class="block py-2 px-4 rounded hover:bg-gray-700">À propos</a>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('veille-dropdown')">
+            Veille Technologique
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="veille-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_veille.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir la veille</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('projets-dropdown')">
+            Projets
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="projets-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_projets.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir les projets</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('epreuve-e5-dropdown')">
+            Epreuve E5
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="epreuve-e5-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_epreuve_e5.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir Epreuve E5</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <button class="w-full flex justify-between items-center py-2 px-4 rounded hover:bg-gray-700 focus:outline-none" onclick="toggleDropdown('epreuve-e6-dropdown')">
+            Epreuve E6
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="epreuve-e6-dropdown" class="hidden pl-4 mt-2">
+            <li><a href="page_epreuve_e6.html" class="block py-1 px-2 rounded hover:bg-gray-700">Voir Epreuve E6</a></li>
+          </ul>
+        </li>
+        <li class="mb-4">
+          <a href="page_contact.html" class="block py-2 px-4 rounded hover:bg-gray-700">Me contacter</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="flex-1 p-8 overflow-auto max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-6">Veille Technologique</h1>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Introduction</h2>
+      <p>Bienvenue sur ma page de veille technologique où je partage les dernières tendances, articles, et ressources dans le domaine de l'informatique et des technologies.</p>
+    </section>
+    <section class="mb-6">
+      <p>Ma veille technologique se porte sur l'Intelligence Artificiel et plus précisément ses bien fait dans le domaine la santé.</p>
+      <p>Pour faire simple, l'intelligence artificiel est un ensemble de théorie et technique servant à des machines pour qu'elle puisse imiter l'intelligence humaine.</p>
+      <p>Elle est en plein essor et a un impact croissant sur de nombreux domaines de notre vie, tels que la santé, la finance, la production, la logistique, les transports, etc.</p>
+      <p>Voici quelques utilité de l'IA dans le domaine de la santé :</p>
+      <ul class="list-disc list-inside space-y-2">
+        <li>Test de dépistage automatisé : Les tests de dépistage de routine pour des maladies telles que le diabète et les maladies cardiaques bénéficient de l'IA pour une détection plus rapide et plus précise.</li>
+        <li>Optimisation des Médicaments : Les outils d'IA aident à prédire la réponse des patients aux médicaments, permettant des ajustements personnalisés des dosages et des combinaisons thérapeutiques.</li>
+        <li>Surveillance à domicile : Les dispositifs de surveillance de la santé à domicile équipés d'IA permettent de suivre en temps réel les paramètres de santé des patients atteints de maladies chroniques, améliorant ainsi la gestion des soins et la qualité de vie des patients.</li>
+      </ul>
+    </section>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Conclusion</h2>
+      <p>Avec l'avancé de la technologie on peut être sur que l'Intelligence Artificiel va prendre plus d'ampleur et de place dans les avenirs, elle sera utilisé dans énormément de domaine et pourra servir à tout le monde. C'est une technologie à suivre de près car on ne sait pas encore ce qu'elle sera capable dans un avenir proche.</p>
+      <p><strong>"L'Intelligence artificielle et la médecine Présentation de l'IA par l'OMS et ses bénéfiques dans la santé publique":</strong></p>
+      <p>L'intelligence artificielle joue un rôle central dans l'évolution de la médecine, en facilitant les opérations assistées, le suivi à distance des patients, le développement de prothèses intelligentes, ainsi que la personnalisation des traitements grâce à l'analyse des données massives.</p>
+      <p><strong>"L'intelligence artificiel S.A.R.A.H. qui est utilisé dans le domaine de la santé publique.":</strong> Le projet vise à améliorer l'accès à des informations de santé fiables et à réduire les inégalités.</p>
+    </section>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Articles récents</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><a href="https://example.com/article1" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Article 1: Les nouveautés en cybersécurité</a></li>
+        <li><a href="https://example.com/article2" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Article 2: Tendances en cloud computing</a></li>
+        <li><a href="https://example.com/article3" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Article 3: Innovations en intelligence artificielle</a></li>
+      </ul>
+    </section>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Ressources utiles</h2>
+      <ul class="list-disc list-inside space-y-2">
+        <li><a href="https://www.techradar.com" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">TechRadar</a></li>
+        <li><a href="https://www.wired.com" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Wired</a></li>
+        <li><a href="https://www.theverge.com" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">The Verge</a></li>
+      </ul>
+    </section>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold mb-2">Liens supplémentaires</h2>
+      <div class="flex space-x-4">
+        <a href="https://www.inserm.fr/dossier/intelligence-artificielle-et-sante/#:~:text=L'IA%20est%20en%20effet,de%20donn%C3%A9es%20(big%20data)%E2%80%A6" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">INSERM - Intelligence Artificielle et Santé</a>
+        <a href="https://www.who.int/fr/news/item/02-04-2024-who-unveils-a-digital-health-promoter-harnessing-generative-ai-for-public-health" target="_blank" rel="noopener noreferrer" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">WHO - Digital Health Promoter</a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleDropdown(id) {
+      const el = document.getElementById(id);
+      if (el.classList.contains('hidden')) {
+        el.classList.remove('hidden');
+      } else {
+        el.classList.add('hidden');
+      }
+    }
+  </script>
+</body>
+</html>
